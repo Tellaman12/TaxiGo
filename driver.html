@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Driver • RankGo</title><link rel="stylesheet" href="styles.css"/></head>
+<body data-page="driver"><div class="container">
+<nav class="navbar"><div class="nav-left"><img src="assets/logo.svg" alt="logo"/><div class="brand">RankGo<b>Taxi</b></div></div><div class="nav-right"><span id="userBadge" class="badge"></span><a href="#" id="logoutBtn">Logout</a></div></nav>
+<div class="card"><h1>My taxis / routes</h1>
+<div class="grid">
+<div class="col-6"><h2>Add a vehicle</h2>
+<input class="input" id="vName" placeholder="Vehicle name (e.g. Quantum)"/>
+<div class="grid" style="margin-top:8px"><div class="col-6"><input class="input" id="vOrigin" placeholder="Origin"/></div><div class="col-6"><input class="input" id="vDest" placeholder="Destination"/></div></div>
+<div class="grid" style="margin-top:8px"><div class="col-6"><input class="input" id="vSeats" type="number" min="1" value="15" placeholder="Seats"/></div><div class="col-6"><input class="input" id="vPrice" type="number" min="0" value="30" placeholder="Price per seat"/></div></div>
+<input class="input" id="vTimes" style="margin-top:8px" placeholder="Departure times (comma-separated, e.g. 06:00,07:30,09:00)"/>
+<button class="btn" id="addVehicleBtn" style="margin-top:10px">Add vehicle</button>
+<p class="small" id="vHint" style="margin-top:6px"></p></div>
+<div class="col-6"><h2>My vehicles</h2><div id="myVehicles"></div></div>
+</div></div>
+<div class="card"><h2>Bookings for my taxis</h2><div id="driverBookings"></div></div>
+</div><script src="index.js"></script></body></html>
